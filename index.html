@@ -80,7 +80,7 @@
                     <p>This sections includes the mammals in this website.</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Mammals</a>
+                    <a class="waves-effect waves-green btn indigo" href="#">Mammals</a>
                 </div>
             </div>
         </div>
@@ -91,10 +91,10 @@
                     <span class="card-title">Blue crested lizard</span>
                 </div>
                 <div class="card-content">
-                    <p>This part contains the reptiles in this website.</p>
+                    <p>This part includes all the reptiles in this website.</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Reptiles</a>
+                    <a class="waves-effect waves-green btn indigo" href="#">Reptiles</a>
                 </div>
             </div>
         </div>
@@ -105,10 +105,10 @@
                     <span class="card-title">Comet</span>
                 </div>
                 <div class="card-content">
-                    <p>This part contains all the fish in this website.</p>
+                    <p>This part includes all the fish in this website.</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Fish</a>
+                    <a class="waves-effect waves-green btn indigo" href="#">Fish</a>
                 </div>
             </div>
         </div>
@@ -122,13 +122,21 @@
         <div class="container">
             <div><i class="tiny material-icons">copyright</i>2025</div>
             <div class="fixed-action-btn right">
-                <a class="btn-floating yellow"><i class="small material-icons">contacts</i></a>
+                <a class="btn-floating yellow pulse tooltipped" data-position="left" data-tooltip="Contact Info"><i class="small material-icons">contacts</i></a>
                 <ul>
-                    <li><a class="btn-floating red"><i class="material-icons">contact_mail</i></a></li>
-                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">contact_phone</i></a></li>
+                    <li>
+                        <a class="btn-floating green tooltipped" data-position="left" data-tooltip="Email"><i class="material-icons">contact_mail</i></a>
+                    </li>
+                    <li>
+                        <a class="btn-floating orange tooltipped" data-position="left" data-tooltip="Phone"><i class="material-icons">contact_phone</i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, {inDuration:300});
+      });</script>
 </body>
 </html>
