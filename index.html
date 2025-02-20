@@ -69,12 +69,26 @@
 
 
     <!--Harvey section-->
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instance = M.Carousel.init({
+            fullWidth: true,
+            indicators: true
+        });;
+      });</script>
+    <h3 class="center-align">Animal Classes</h3>
     <div class="container row">
         <div class="col s12 m4">
             <div class="card">
-                <div class="card-image">
-                    <img src="images/download.jpg">
-                    <span class="card-title">Koalas</span>
+                <div class="card-image carousel carousel-slider">
+                    <div class="carousel-item">
+                        <img src="images/download.jpg">
+                        <span class="card-title">Koala</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/download (3).jpg">
+                        <span class="card-title">Chimpanzee</span>
+                    </div>
                 </div>
                 <div class="card-content">
                     <p>This sections includes the mammals in this website.</p>
@@ -120,7 +134,8 @@
     });</script>
     <footer class="page-footer indigo">
         <div class="container">
-            <div><i class="tiny material-icons">copyright</i>2025</div>
+            <div></div>
+            <div class="center-align"><i class="tiny material-icons">copyright</i>2025</div>
             <div class="fixed-action-btn right">
                 <a class="btn-floating yellow pulse tooltipped" data-position="left" data-tooltip="Contact Info"><i class="small material-icons">contacts</i></a>
                 <ul>
